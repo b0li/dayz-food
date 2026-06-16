@@ -192,6 +192,8 @@ git push
 # → automatisch live auf https://b0li.github.io/dayz-food/
 ```
 
+> **Workflow:** Vor jedem `git push` explizit bestätigen lassen – nie automatisch pushen.
+
 ---
 
 ## Datenquelle
