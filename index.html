@@ -365,6 +365,29 @@
 		@media ( max-width: 767px ) {
 			:root { --pad: 12px; }
 			.items-grid { grid-template-columns: 1fr; }
+
+			/* Horizontal scroll with snap instead of wrapping */
+			.chips,
+			.states {
+				flex-wrap: nowrap;
+				gap: 8px;
+				overflow-x: auto;
+				scroll-snap-type: x proximity;
+				-webkit-overflow-scrolling: touch;
+				scrollbar-width: none;
+				padding-bottom: 2px;
+			}
+
+			.chips::-webkit-scrollbar,
+			.states::-webkit-scrollbar {
+				display: none;
+			}
+
+			.chips__btn,
+			.states__btn {
+				flex: 0 0 auto;
+				scroll-snap-align: start;
+			}
 		}
 
 	</style>
